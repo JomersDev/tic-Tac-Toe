@@ -1,0 +1,92 @@
+*{margin:0px; padding:0px;}
+
+body, p{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1.2fr;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.reset {
+    border: solid white;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.reset:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.cell {
+    border: solid black;
+    background-color: black;
+    color: white;
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    padding: 0px;
+    font-size: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:hover {
+    background-color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+}
+
+.gameboard-container {
+    display: grid;
+    background-color: white;
+    height: 600px;
+    width: 600px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns:repeat(3, auto) ;
+    gap: 5px;
+}
+
+.display {
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.title {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
